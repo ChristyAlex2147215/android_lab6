@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/r"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="fill_vertical"
+    tools:ignore="MissingConstraints">
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"/>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Furnitures"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:fontFamily="serif"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/iv1"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border"
+                android:contentDescription="@string/firstimage"
+                android:onClick="furniList"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/f1" />
+
+            <ImageButton
+                android:id="@+id/iv2"
+                android:onClick="furniList"
+                android:contentDescription="@string/secondimage"
+                android:src="@drawable/f2"
+                android:layout_width="400dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border"
+                android:layout_height="250dp"/>
+
+            <ImageButton
+                android:id="@+id/iv3"
+                android:onClick="furniList"
+                android:layout_width="400dp"
+                android:maxWidth="@dimen/cardview_default_radius"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/border"
+                android:contentDescription="@string/thirdimage"
+                android:src="@drawable/f3" />
+
+            <ImageButton
+                android:id="@+id/iv4"
+                android:src="@drawable/f4"
+                android:onClick="furniList"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border"
+                android:contentDescription="@string/fourthimage"
+                android:layout_width="400dp"
+                android:layout_height="250dp"/>
+            <ImageButton
+                android:id="@+id/iv5"
+                android:onClick="furniList"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/fifthimage"
+                android:src="@drawable/f4"
+                android:background="@drawable/border"
+                android:layout_width="400dp"
+                android:layout_height="250dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Floating action button for add alarm -->
+    <!-- Make sure that you are constraining this
+         button to the parent button -->
+
+    <!-- Action name text for the add alarm button -->
+    <!-- Make sure that you are constraining this Text to
+         the add Alarm FAB button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_alarm_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:fabSize="normal"
+        android:src="@drawable/ic_baseline_photo_camera_24"
+        app:layout_constraintBottom_toTopOf="@+id/add_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_fab"
+        app:layout_constraintStart_toStartOf="@+id/add_fab"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    <!-- Floating action button for add person -->
+    <!-- Make sure that you are constraining this
+         button to the add Alarm FAB button -->
+
+        <!-- Action name text for the add person button -->
+    <!-- Make sure that you are constraining this Text
+         to the add Person FAB button -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_person_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/add_alarm_fab"
+            app:layout_constraintEnd_toEndOf="@+id/add_alarm_fab"
+            app:layout_constraintStart_toStartOf="@+id/add_alarm_fab"
+            app:srcCompat="@drawable/ic_baseline_person_outline_24" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/add_alarm_fab"
+            app:layout_constraintEnd_toEndOf="@+id/add_alarm_fab"
+            app:layout_constraintStart_toStartOf="@+id/add_alarm_fab"
+            app:srcCompat="@drawable/ic_baseline_contact_support_24" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/add_alarm_fab"
+            app:layout_constraintEnd_toEndOf="@+id/add_alarm_fab"
+            app:layout_constraintStart_toStartOf="@+id/add_alarm_fab"
+            app:srcCompat="@drawable/ic_baseline_feedback_24" />
+    </LinearLayout>
+
+</LinearLayout>

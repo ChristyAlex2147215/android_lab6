@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Welcome, Christy Alex 2147215</string>
+    <string name="firstimage">firstimage</string>
+    <string name="secondimage">secondimage</string>
+    <string name="thirdimage">thirdimage</string>
+    <string name="fourthimage">fourthimage</string>
+    <string name="fifthimage">fifthimages</string>
+    <string name="Furnitures">Furnitures</string>
+    <string name="sofa1">sofa image</string>
+    <string name="sofa1_cost">$300</string>
+    <string name="google1">Google</string>
+    <string name="linkedin">Linked in</string>
+    <string name="facebook1">Facebook</string>
+    <string name="SignIn">SignIn</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="forgotpass">Forgot Password ?</string>
+    <string name="feedback">Feedback</string>
+    <string name="ratingq">How would you rate us ?</string>
+    <string-array name="spinn">
+        <item>Poor UI</item>
+        <item>Poor Service</item>
+        <item>Lacking Performance</item>
+        <item>Account Problems</item>
+        <item>Other</item>
+    </string-array>
+    <string name="selectgender">Select your gender</string>
+    <string name="male">Male</string>
+    <string name="female">female</string>
+    <string name="submit">submit</string>
+    <string name="contactyou">Would you like to get emails and notification ?</string>
+
+
+
+
+</resources>

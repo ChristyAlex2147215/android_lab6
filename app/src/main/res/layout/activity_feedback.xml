@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".feedback">
+
+        <TextView
+            android:id="@+id/feebacktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="163dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/feedback"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ratingq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="82dp"
+            android:text="@string/ratingq"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/feebacktitle"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="314dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="127dp"
+            android:layout_marginEnd="55dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ratingq"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.048"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="194dp"
+            android:text="How likely would you recommed this app to friends?"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="234dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/firstradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/secondradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/thirdradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/fourthradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/fifthradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="294dp"
+            android:text="select a problem you faced"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="338dp"
+            android:background="@color/teal_700"
+            android:entries="@array/spinn"
+            android:outlineAmbientShadowColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="423dp"
+            android:text="Where does the app need improvement ?"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="516dp"
+            android:layout_marginEnd="154dp"
+            android:text="UI"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="518dp"
+            android:layout_marginEnd="255dp"
+            android:text="Availability"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="461dp"
+            android:layout_marginEnd="130dp"
+            android:text="Support"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="466dp"
+            android:layout_marginEnd="267dp"
+            android:text="Services"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="562dp"
+            android:layout_marginEnd="190dp"
+            android:text="Others"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="605dp"
+            android:layout_marginEnd="170dp"
+            android:text="@string/selectgender"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="654dp"
+            android:layout_marginEnd="42dp"
+            android:textColor="@color/black"
+            android:textOff="@string/male"
+            android:textOn="@string/female" />
+
+        <TextView
+            android:id="@+id/contactyou"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switch1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="645dp"
+            android:layout_marginEnd="190dp"
+            android:text="@string/contactyou"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="604dp"
+            android:layout_marginEnd="67dp"
+            android:text="ToggleButton"
+            android:textColor="@color/black"
+            android:textOff="Male"
+            android:textOn="Female"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="266dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/contactyou"
+            android:layout_alignEnd="@+id/contactyou"
+            android:layout_alignRight="@+id/contactyou"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="304dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="-45dp"
+            android:layout_marginRight="-45dp"
+            android:hint="Enter Text"
+            android:text="https link"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="85dp"
+            android:layout_height="52dp"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="-1dp"
+            android:background="@color/teal_700"
+            android:onClick="borwsee"
+            android:text="open"
+            android:textSize="15sp" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="185dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="79dp"
+            android:background="@color/teal_700"
+            android:backgroundTint="@color/teal_700" />
+
+        <Button
+            android:id="@+id/submitbtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="887dp"
+            android:layout_marginEnd="169dp"
+            android:background="@color/black"
+            android:onClick="onClickSubmit"
+            android:paddingTop="15sp"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_gravity="end|bottom"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="48dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:contentDescription="@string/submit"-->
+<!--            android:src="@drawable/ic_baseline_more_vert_24" />-->
+    </RelativeLayout>
+</ScrollView>
